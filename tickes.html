@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TICKES</title>
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+    <!-- Font Awesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="main-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <ul>
+                <li><i class="fas fa-home"></i></li>
+                <li><i class="fas fa-tools"></i></li>
+                <li><i class="fas fa-users"></i></li>
+                <li><i class="fas fa-envelope"></i></li>
+            </ul>
+        </div>
+
+        <!-- Content Area -->
+        <div class="content">
+            <header class="header">
+                <h1>SOFTUEFI</h1>
+                <div class="header-actions">
+                    <button class="btn btn-primary">Comprar planes</button>
+                    <button class="btn btn-secondary">Compre su versión de prueba</button>
+                </div>
+            </header>
+
+            
+            <div class="container">
+                <h2>TICKES POR GESTIONAR</h2>
+                <table id="example" class="display" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>ID Tickes</th>
+                            <th>Fecha</th>
+                            <th>Descripción del Problema</th>
+                            <th>Ubicación</th>
+                            <th>Nombre del Equipo</th>
+                            <th>Estado</th>
+                            <th>Optiones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0001</td>
+                            <td>17/09/2024</td>
+                            <td>Software no Responde</td>
+                            <td>Bodega-01</td>
+                            <td>Victus Hp</td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td>
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>0002</td>
+                            <td>18/09/2024</td>
+                            <td>Pantalla Azul</td>
+                            <td>Bodega-04</td>
+                            <td>Asus Vivobook</td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td>
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>0003</td>
+                            <td>19/09/2024</td>
+                            <td>Sobrecalentamiento</td>
+                            <td>Bodega-02</td>
+                            <td>Lenovo IdeaPad</td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td>
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>0004</td>
+                            <td>20/09/2024</td>
+                            <td>No Enciende</td>
+                            <td>Bodega-03</td>
+                            <td>Acer Aspire</td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td>
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>0005</td>
+                            <td>21/09/2024</td>
+                            <td>Sonido Distorsionado</td>
+                            <td>Bodega-01</td>
+                            <td>Hp Gaming</td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td>
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </td>
+                        </tr>
+                        
+                        <!-- Más filas -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- DataTables JS -->
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
+

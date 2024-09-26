@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORREOS</title>
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+    <!-- Font Awesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <ul>
+                <li><i class="fas fa-home"></i></li>
+                <li><i class="fas fa-tools"></i></li>
+                <li><i class="fas fa-users"></i></li>
+                <li><i class="fas fa-envelope"></i></li>
+            </ul>
+        </div>
+
+        <!-- Content Area -->
+        <div class="content">
+            <header class="header">
+                <h1>SOFTUEFI</h1>
+                <div class="header-actions">
+                    <button class="btn btn-primary">Comprar planes</button>
+                    <button class="btn btn-secondary">Compre su versión de prueba</button>
+                </div>
+            </header>
+
+            <div class="container">
+                <h2>Lista de usuarios</h2>
+                <table id="example" class="display" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>City</th>
+                            <th>Company</th>
+                            <th>Status</th>
+                            <th>Options</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Ivan RINCON</td>
+                            <td>iVAN123@april.biz</td>
+                            <td>Bogotá</td>
+                            <td>Grupo Music</td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td>
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Miguel Palacio</td>
+                            <td>MiguelP123@april.biz</td>
+                            <td>Medellin</td>
+                            <td>Empresa Software</td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td>
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Diego Hérnandez</td>
+                            <td>DiegoH123@april.biz</td>
+                            <td>Envigado</td>
+                            <td>Alimentos S.A.S</td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td>
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>Daniela POsada</td>
+                            <td>DanielP123@april.biz</td>
+                            <td>Cali</td>
+                            <td>Biblioteca</td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td>
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td>Sebastian Correa</td>
+                            <td>SebastianC123@april.biz</td>
+                            <td>Cartagena</td>
+                            <td>Transportes</td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td>
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>6</td>
+                            <td>Juan Londoño</td>
+                            <td>JuanL123@april.biz</td>
+                            <td>Barranquilla</td>
+                            <td>Empresa Software</td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td>
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>7</td>
+                            <td>Valeria Ocampo</td>
+                            <td>ValeriaO123@april.biz</td>
+                            <td>Santa Marta</td>
+                            <td>Equipos Botes</td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td>
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>8</td>
+                            <td>Julio Mena</td>
+                            <td>JulioM123@april.biz</td>
+                            <td>Ibagué</td>
+                            <td>Cafe Internet</td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td>
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>9</td>
+                            <td>Maria Muñoz</td>
+                            <td>MariaM123@april.biz</td>
+                            <td>Bucaramanga</td>
+                            <td>Tienda Ropa</td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td>
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>10</td>
+                            <td>Camila Velez</td>
+                            <td>CamilaV123@april.biz</td>
+                            <td>Pasto</td>
+                            <td>Marketin</td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td>
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>11</td>
+                            <td>Esteban Morales</td>
+                            <td>EstebanM123@april.biz</td>
+                            <td>Pereira</td>
+                            <td>learning institute</td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td>
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>12</td>
+                            <td>Santiago Mosquera</td>
+                            <td>SantiagoM123@april.biz</td>
+                            <td>Medellin</td>
+                            <td>Consultorio Abogados</td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td>
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>Maria Garcia</td>
+                            <td>MariaG@gmail.com</td>
+                            <td>Cali</td>
+                            <td>Tech Solutions</td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td>
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>Jose Perez</td>
+                            <td>JoseP123@april.biz</td>
+                            <td>Medellín</td>
+                            <td>Innovation Group</td>
+                            <td><i class="fa fa-times"></i></td>
+                            <td>
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>Ana Fernández</td>
+                            <td>AnaF@gmail.com</td>
+                            <td>Cartagena</td>
+                            <td>Travel World</td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td>
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>Carlos Martínez</td>
+                            <td>CarlosM123@april.biz</td>
+                            <td>Bogotá</td>
+                            <td>Consulting Services</td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td>
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>Lucía Torres</td>
+                            <td>LuciaT@gmail.com</td>
+                            <td>Bucaramanga</td>
+                            <td>Design Studio</td>
+                            <td><i class="fa fa-times"></i></td>
+                            <td>
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>Andrés Gómez</td>
+                            <td>AndresG123@april.biz</td>
+                            <td>Manizales</td>
+                            <td>Media Corp</td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td>
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>Laura Gutiérrez</td>
+                            <td>LauraG@gmail.com</td>
+                            <td>Neiva</td>
+                            <td>HealthCare Inc</td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td>
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>Fernando Rojas</td>
+                            <td>FernandoR123@april.biz</td>
+                            <td>Villavicencio</td>
+                            <td>AgriTech</td>
+                            <td><i class="fa fa-times"></i></td>
+                            <td>
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>Sofia Ramirez</td>
+                            <td>SofiaR@gmail.com</td>
+                            <td>Santa Marta</td>
+                            <td>EcoWorld</td>
+                            <td><i class="fa fa-check"></i></td>
+                            <td>
+                                <button class="edit-btn">✏️</button>
+                                <button class="delete-btn">🗑️</button>
+                            </td>
+                        </tr>
+                        
+
+                        <!-- Más filas -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- DataTables JS -->
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
+
